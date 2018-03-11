@@ -165,13 +165,23 @@
             if (!place.geometry) {
               console.log("Returned place contains no geometry");
               return;
-            }
+            } var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
             var icon = {
+                 parking: {
+            icon: iconBase + 'parking_lot_maps.png'
+          },
+          library: {
+            icon: iconBase + 'library_maps.png'
+          },
+          info: {
+            icon: iconBase + 'info-i_maps.png'
+          },
               url: place.icon,
               size: new google.maps.Size(71, 71),
               origin: new google.maps.Point(0, 0),
               anchor: new google.maps.Point(17, 34),
-              scaledSize: new google.maps.Size(25, 25)
+              scaledSize: new google.maps.Size(25, 25),
+
             };
 
             // Create a marker for each place.
