@@ -1,15 +1,14 @@
-# A Blank PhoneGap App
+# Fine Parking
 
-## Usage
+## Proyecto Interfaces de usuario
 
-### PhoneGap CLI
 
-    $ phonegap create my-app --template blank
 
-### Desktop
+    Hemos diseñado una aplicación web en la que permite ver los lugare cerca del destino tuyo puedas ver los sitios de parking disponibles para aparcar
 
-In your browser, open the file:
+### Desarrolladores
 
-    /www/index.html
+Andrés Mario Murcia Burruezo y Ricardo Lopez Pensado
+
 
 # interfacesU
