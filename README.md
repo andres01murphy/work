@@ -8,5 +8,5 @@ Hemos diseñado una aplicación web en la que permite ver los lugare cerca del d
 Andrés Mario Murcia Burruezo y Ricardo Lopez Pensado
 
 
-# interfacesU
+# Interfaces de Usuario
 
