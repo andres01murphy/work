@@ -16,33 +16,26 @@
       <a class="navbar-brand" href="index.html">Fine Parking</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="index.html">Home</a></li>
-         <li class="active"><a href="quienesomos.html"  >Quienes somos</a></li>
+      <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="#">Favoritos</a></li>
+
     </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="formulario.php"><span class="glyphicon glyphicon-user"></span> Sing Up</a></li>
-      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
+
   </div>
 </nav>
     <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-
-
          <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
         height: 100%;
+          width: auto
+          margin: auto
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
         height: 100%;
-        margin: 0;
+        margin: auto;
         padding: 0;
       }
       .controls {
@@ -95,10 +88,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>FINE PARKING</title>
+    <title>Album example for Bootstrap</title>
 
 
     <!-- Bootstrap core CSS -->
+
+
   </head>
 
   <body>
@@ -111,12 +106,27 @@
         <div class="container">
             <img class="logo" width="250" height="auto" SRC="https://cdn3.iconfinder.com/data/icons/hotel-services-facilities/256/Parking-256.png">
           <h1 class="jumbotron-heading">Busca parking en Madrid</h1>
+            <div><a href="Favoritos.html"> <input type="button" class="btn btn-lg btn-primary btn-block" value="Favorito"></a></div>
+             <div><a href="quienesomos.htm"> <input type="button" class="btn btn-lg btn-primary btn-block" value="Favorito"></a></div>
+          </div>  </section>
+            <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+        <div class="pwstrength_viewport_progress"></div>
+          <div class="col-md-4">
+      <section class="login-form">
+        <form action="#" role="login">
 
 
-        </div>
+
+    <div id="map">
+
+        <a href="Favoritos.html"> <input type="button" class="btn btn-lg btn-primary btn-block" value="Favorito"></a>
+              </div>
+
+        </form>
+
+
       </section>
- <input id="pac-input" class="controls" type="text" placeholder="Search Box">
-    <div id="map"></div>
+      </div>
     <script>
       // This example adds a search box to a map, using the Google Place Autocomplete
       // feature. People can enter geographical searches. The search box will return a
@@ -129,7 +139,7 @@
       function initAutocomplete() {
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: -33.8688, lng: 151.2195},
-          zoom: 20,
+          zoom: 13,
           mapTypeId: 'roadmap'
         });
 
@@ -137,7 +147,6 @@
         var input = document.getElementById('pac-input');
         var searchBox = new google.maps.places.SearchBox(input);
         map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
-
 
         // Bias the SearchBox results towards current map's viewport.
         map.addListener('bounds_changed', function() {
@@ -166,23 +175,13 @@
             if (!place.geometry) {
               console.log("Returned place contains no geometry");
               return;
-            } var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+            }
             var icon = {
-                 parking: {
-            icon: iconBase + 'parking_lot_maps.png'
-          },
-          library: {
-            icon: iconBase + 'library_maps.png'
-          },
-          info: {
-            icon: iconBase + 'info-i_maps.png'
-          },
               url: place.icon,
-              size: new google.maps.Size(100, 100),
+              size: new google.maps.Size(71, 71),
               origin: new google.maps.Point(0, 0),
               anchor: new google.maps.Point(17, 34),
-              scaledSize: new google.maps.Size(25, 25),
-
+              scaledSize: new google.maps.Size(25, 25)
             };
 
             // Create a marker for each place.
@@ -202,39 +201,12 @@
           });
           map.fitBounds(bounds);
         });
-          var infoWindow = new google.maps.InfoWindow({map: map});
-
-        // Try HTML5 geolocation.
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(function(position) {
-            var pos = {
-              lat: position.coords.latitude,
-              lng: position.coords.longitude
-            };
-
-            infoWindow.setPosition(pos);
-            infoWindow.setContent('Location found.');
-            map.setCenter(pos);
-          }, function() {
-            handleLocationError(true, infoWindow, map.getCenter());
-          });
-        } else {
-          // Browser doesn't support Geolocation
-          handleLocationError(false, infoWindow, map.getCenter());
-        }
-      }
-        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-        infoWindow.setPosition(pos);
-        infoWindow.setContent(browserHasGeolocation ?
-                              'Error: The Geolocation service failed.' :
-                              'Error: Your browser doesn\'t support geolocation.');
       }
 
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpyIpX8BjeLT-IyJhKVV5hRyEgGeU9llk&libraries=places&callback=initAutocomplete"
          async defer></script>
 
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="../../../../assets/js/vendor/popper.min.js"></script>
@@ -243,5 +215,6 @@
       <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/script.js"></script>
-  </body>
+    </body>
+
 </html>

@@ -1,35 +1,13 @@
-
-<html lang="en">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
-       <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="css/miclase.css" >
-    <!-- Custom styles for this template -->
-    <link href="album.css" rel="stylesheet">
-    <link rel="icon" href="../../../../favicon.ico">
-   <nav class="navbar navbar-inverse testnav" style="margin-top:16px;">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="index.html">Fine Parking</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="iniciouser.html">Home</a></li>
-
-         <li class="active"><a href="quienesomos.html"  >Quienes somos</a></li>
-
-    </ul>
-<ul class="nav navbar-nav navbar-right">
-
-      <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Cerrar sesion</a></li>
-    </ul>
-  </div>
-</nav>
-    <head>
-         <style>
-          #map {
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Directions service (complex)</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
         height: 100%;
       }
       /* Optional: Makes the sample page fill the window. */
@@ -38,81 +16,28 @@
         margin: 0;
         padding: 0;
       }
-      .controls {
-        margin-top: 10px;
-        border: 1px solid transparent;
-        border-radius: 2px 0 0 2px;
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        height: 32px;
-        outline: none;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-      }
-
-      #pac-input {
+      #floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
         background-color: #fff;
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 300;
-        margin-left: 12px;
-        padding: 0 11px 0 13px;
-        text-overflow: ellipsis;
-        width: 300px;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
       }
-
-      #pac-input:focus {
-        border-color: #4d90fe;
-      }
-
-      .pac-container {
-        font-family: Roboto;
-      }
-
-      #type-selector {
-        color: #fff;
-        background-color: #4d90fe;
-        padding: 5px 11px 0px 11px;
-      }
-
-      #type-selector label {
-        font-family: Roboto;
-        font-size: 13px;
-        font-weight: 300;
-      }
-      #target {
-        width: 345px;
+      #warnings-panel {
+        width: 100%;
+        height:10%;
+        text-align: center;
       }
     </style>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Album example for Bootstrap</title>
-
-
-    <!-- Bootstrap core CSS -->
-
-
   </head>
-
   <body>
-
-
-
-
-
-      <section class="jumbotron text-center">
-        <div class="container">
-            <img class="logo" width="250" height="auto" SRC="https://cdn3.iconfinder.com/data/icons/hotel-services-facilities/256/Parking-256.png">
-          <h1 class="jumbotron-heading">Busca parking en Madrid</h1>
-            <div><a href="registro.php"> <input type="button" class="btn btn-lg btn-primary btn-block" value="Favorito"></a></div>
-
-          </div>  </section>
-
-
-
-<div class="float-panel" id="floating-panel">
+    <div id="floating-panel">
     <b>Start: </b>
     <select id="start">
       <option value="Calle de Goya, Madrid">Calle Goya</option>
@@ -218,15 +143,5 @@
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpyIpX8BjeLT-IyJhKVV5hRyEgGeU9llk&callback=initMap">
     </script>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../../../dist/js/bootstrap.min.js"></script>
-    <script src="../../../../assets/js/vendor/holder.min.js"></script>
-      <script src="js/jquery-2.1.4.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
-    </body>
-
+  </body>
 </html>

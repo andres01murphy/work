@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>InformaticaPC | JSON con JQuery IV</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+        body { background-color:lightyellow;font-family:Arial;font-size:10pt; }
+        #log { color:yellow;background-color:red;margin-bottom:10px; }
+        #resultado { background-color:lightgray;margin-top:10px; }
+    </style>
+    <script type="text/javascript" src="../lib/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            // Dar el foco al recuadro del código
+            $("#codigo").focus();
+            // -----------------------------
+            // Al hacer clic en el botón para buscar
+            $("#cargar").click(function()
+            {
+                // Enviar la petición mediante POST
+                 $.ajax({
+                         async: true,
+                         type: "POST",
+                         dataType: "json",
+                         contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+                         url: "json1.php",
+                         beforeSend: antesEnvio,
+                         success: mostrarDatos,
+                         timeout: 4000,
+                         error: errorEnvio
+                 });
+                return false;
+            });
+        });
+        // -----------------------------
+        // Antes de enviar los datos
+         function antesEnvio() {
+            $("#log").text("Se procesa la función 'antesEnvio()' antes de enviarse los datos...");
+        }
+        // -----------------------------
+        // En caso de error
+         function errorEnvio() {
+            $("#log").text("Ha ocurrido un error!");
+        }
+        // -----------------------------
+        // Carga los datos recibidos en los cuadros de texto
+         function mostrarDatos( aDatos )
+        {
+            var html;
+            html = "<p>Se encontraron [" + aDatos.length + "] registro(s)</p>";
+            html += "<table border='1'>";
+            html +=     "<thead>";
+            html +=         "<tr>";
+            html +=             "<th>Nombre</th>";
+            html +=             "<th>Apellido 1º</th>";
+            html +=             "<th>Apellido 2º</th>";
+            html +=             "<th>F/Nacimiento</th>";
+            html +=             "<th>Cuota</th>";
+            html +=         "</tr>";
+            html +=     "</thead>";
+            for( var contador=0; contador < aDatos.length; contador++ )
+            {
+                html += "<tr>";
+                html += "<td>" + aDatos[contador].nombre    + "</td>";
+                html += "<td>" + aDatos[contador].apellido1 + "</td>";
+                html += "<td>" + aDatos[contador].apellido2 + "</td>";
+                html += "<td>" + aDatos[contador].fnac      + "</td>";
+                html += "<td>" + aDatos[contador].cuota     + "</td>";
+                html += "</tr>";
+            }
+            html += "</table>";
+            $("#resultado").html( html );
+        }
+    </script>
+  </head>
+  <body>
+    <div id="log"> </div>
+    <input type="button" name="cargar" id="cargar" value="Cargar datos" />
+    <div id="resultado"> </div>
+  </body>
+</html>

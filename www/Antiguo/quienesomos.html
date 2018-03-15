@@ -1,0 +1,155 @@
+
+   <html lang="es">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/miclase.css" >
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+    <link rel="icon" href="../../../../favicon.ico">
+   <nav class="navbar navbar-inverse testnav" style="margin-top:16px;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Fine Parking</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+
+         <li class="active"><a href="#">Quienes somos</a></li>
+
+    </ul>
+
+  </div>
+</nav>
+    <head>
+         <style>
+
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+          width: auto
+          margin: auto
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: auto;
+        padding: 0;
+      }
+      .controls {
+        margin-top: 10px;
+        border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 32px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 300px;
+      }
+
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+
+      .pac-container {
+        font-family: Roboto;
+      }
+
+      #type-selector {
+        color: #fff;
+        background-color: #4d90fe;
+        padding: 5px 11px 0px 11px;
+      }
+
+      #type-selector label {
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: 300;
+      }
+      #target {
+        width: 345px;
+      }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Album example for Bootstrap</title>
+
+
+    <!-- Bootstrap core CSS -->
+
+
+  </head>
+
+  <body>
+
+
+
+
+
+      <section class="jumbotron text-center">
+        <div class="container">
+             <img class="logo" width="250" height="auto" SRC="https://cdn3.iconfinder.com/data/icons/hotel-services-facilities/256/Parking-256.png">
+          </div>
+           <div class="container"><img class="logo" width="250" height="auto" SRC="https://scontent.fmad3-1.fna.fbcdn.net/v/t1.0-9/13082639_10207564116915853_4885605264192579923_n.jpg?oh=f2b6b1b911085c4edae11db6981d76c3&oe=5B4CA784" onClick="alert('Soy Ricardo Lopez Pensado, soy de Galicia y estudio Ing. Informática')" >
+             <img class="logo" width="250" height="auto" SRC="https://scontent.fmad3-1.fna.fbcdn.net/v/t1.0-9/20638587_1781341435213795_3736265467381716887_n.jpg?_nc_eui2=v1%3AAeFX-WKDNT25HlM5Qsf6iTIbElwqFYCZ__rpJ4nX3E7TOVkfvtV2UPmBuQrd5kjWQDvIR873xiKxzbtgkvS90pzsU_TMQl0PKit_xU3TqrmoRg&oh=949b5baea3996f822291fa13634632a9&oe=5B2F5561" onClick="alert('Soy Andres Murcia Burruezo, soy de Málaga y estudio Ing. Informática y Dicre')">
+
+          <h1 class="jumbotron-heading">¿Quienes somos?</h1>
+
+            </div>
+             <div class="container">
+             <h2>Acerca del proyecto</h2>
+             <h5> En el siglo en el que vivimos cada vez tenemos menos tiempo y disponibilidad debido a las exigencias que hay en el mundo laboral, donde prima la importancia de la puntualidad a la hora de ir a trabajar.
+Puede ser, que el lugar donde trabajes, sea un lugar sin apenas aparcamiento, como puede ser una gran ciudad como Madrid, en zonas como Argüelles, Bernabeu, Calle Real, etc.
+¿Qué podemos hacer nosotros, con nuestros conocimientos, para solucionar este problema?
+Nuestro objetivo es, con nuestros conocimientos aprendidos durante este curso, desarrollar una aplicación que solucione este problema.
+Mediante una búsqueda GPS a través de Google Maps, buscaremos los puntos desde cualquier zona para buscar parking a través del móvil y que estos problemas de buscar aparcamiento se reduzcan considerablemente en tiempo.
+</h5>
+		  </div>
+             </section>
+
+        <div class="pwstrength_viewport_progress"></div>
+          <div class="col-md-4">
+      <section class="login-form">
+        <form action="#" role="login">
+
+
+
+
+
+        </form>
+
+
+      </section>
+      </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpyIpX8BjeLT-IyJhKVV5hRyEgGeU9llk&libraries=places&callback=initAutocomplete"
+         async defer></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../../../dist/js/bootstrap.min.js"></script>
+    <script src="../../../../assets/js/vendor/holder.min.js"></script>
+      <script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+    </body>
+
+</html>

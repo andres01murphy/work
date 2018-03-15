@@ -1,0 +1,107 @@
+<alumnos>
+    <alumno>
+        <nombre> Pablo
+        </nombre>
+        <apellidos>ALVAREZ MARTÍNEZ
+        </apellidos>
+        <email> ipablo.alvarezmv@gmail.com
+        </email>
+    </alumno>
+    <alumno>
+        <nombre>Sergio
+        </nombre>
+        <apellidos>CANDEL VAN KOOTEN
+        </apellidos>
+        <email>sergiocandelvankooten@gmail.com
+        </email>
+    </alumno>
+    <alumno>
+        <nombre> Carlos
+        </nombre>
+        <apellidos>CASTRO MÍNGUEZ
+        </apellidos>
+        <email>nkarloskastro12@gmail.com
+        </email>
+    </alumno>
+    <alumno>
+        <nombre>Ricardo Jose
+        </nombre>
+        <apellidos>LOPEZ PENSADO
+        </apellidos>
+        <email> rijolop@gmail.com
+        </email>
+    </alumno>
+    <alumno>
+        <nombre> José
+        </nombre>
+        <apellidos> LÓPEZ RODRÍGUEZ
+        </apellidos>
+        <email> LOPEZ17TURRE@GMAIL.COM
+        </email>
+    </alumno>
+    <alumno>
+        <nombre>Andres Mario
+        </nombre>
+        <apellidos>MURCIA BURRUEZO
+        </apellidos>
+        <email>andy02muz@gmail.com
+        </email>
+    </alumno>
+    <alumno>
+        <nombre>Jorge
+        </nombre>
+        <apellidos>OTERO AZABAL
+        </apellidos>
+        <email> JORGEOTEROAZABAL96@GMAIL.COM
+        </email>
+    </alumno>
+       <alumno>
+        <nombre>Miguel
+        </nombre>
+        <apellidos>CHACÓN CARRASCO
+        </apellidos>
+        <email>MICHACA94@GMAIL.COM
+        </email>
+    </alumno>
+    <alumno>
+        <nombre>Jesús
+        </nombre>
+        <apellidos>RODRÍGUEZ SANTIAGO
+        </apellidos>
+        <email> jesusrs729@gmail.com
+        </email>
+    </alumno>
+    <alumno>
+        <nombre>Erik Andrés
+        </nombre>
+        <apellidos>RODRÍGUEZ UMPIERREZ
+        </apellidos>
+        <email>erikurodriguez96@gmail.com
+        </email>
+    </alumno>
+     <alumno>
+        <nombre>Guillermo
+        </nombre>
+        <apellidos>VIDAL DEL PALACIO
+        </apellidos>
+        <email>GUILLEVIDI96@GMAIL.COM
+        </email>
+    </alumno>
+    <alumno>
+        <nombre>Alicia
+        </nombre>
+        <apellidos>ROMERO CALOMARDE
+        </apellidos>
+        <email>aliciaromerocalomarde@gmail.com
+        </email>
+    </alumno>
+     <alumno>
+        <nombre>Luis
+        </nombre>
+        <apellidos>ROMERO CALOMARDE
+        </apellidos>
+        <email>aliciaromerocalomarde@gmail.com
+        </email>
+    </alumno>
+
+</alumnos>
