@@ -15,8 +15,8 @@
       <a class="navbar-brand" href="index.html">Fine Parking</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-        <li class="active"><a href="#">Favoritos</a></li>
+      <li class="active"><a href="iniciouser.html">Home</a></li>
+
 
     </ul>
 
@@ -28,7 +28,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Album example for Bootstrap</title>
+    <title>Fine Parking</title>
 
   </head>
   <body>
@@ -47,7 +47,7 @@ if (window.XMLHttpRequest) {
 } else {
 	request = new ActiveXObject("Microsoft.XMLHTTP");
 }
-request.open('GET', 'alumnos.json');
+request.open('GET', 'usuario.json');
 request.onreadystatechange = function() {
 	if ((request.readyState===4) && (request.status===200)) {
 		var items = JSON.parse(request.responseText);
